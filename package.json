@@ -1,0 +1,34 @@
+{
+  "name": "gnome-wallpaper-slideshow-generator",
+  "private": "true",
+  "version": "1.0.0",
+  "description": "Simple Editor for GNOME Wallpaper Slideshow XML Config",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "check": "tsc --noEmit",
+    "build": "vite build",
+    "serve": "vite preview",
+    "format": "prettier --write './**/*.{ts,tsx}'",
+    "preinstall": "npx only-allow pnpm",
+    "prebuild": "test \"$CI\" = true && npx pnpm install --store=node_modules/.pnpm-store || echo skiping pnpm install"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@iconify-json/bx": "^1.1.1",
+    "@iconify-json/bxl": "^1.1.1",
+    "@iconify-json/bxs": "^1.1.1",
+    "pnpm": "^6.32.2",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5",
+    "unplugin-icons": "^0.13.2",
+    "vite": "^2.8.4",
+    "vite-plugin-solid": "^2.2.5"
+  },
+  "dependencies": {
+    "clsx": "^1.1.1",
+    "solid-js": "^1.3.9",
+    "vite-plugin-windicss": "^1.8.1",
+    "windicss": "^3.5.0"
+  }
+}
