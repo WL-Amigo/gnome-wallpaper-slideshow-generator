@@ -10,8 +10,7 @@
     "build": "vite build",
     "serve": "vite preview",
     "format": "prettier --write './**/*.{ts,tsx}'",
-    "preinstall": "npx only-allow pnpm",
-    "prebuild": "test \"$CI\" = true && npx pnpm install --store=node_modules/.pnpm-store || echo skiping pnpm install"
+    "preinstall": "npx only-allow pnpm"
   },
   "license": "MIT",
   "devDependencies": {
